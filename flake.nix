@@ -18,15 +18,8 @@
         devShells.default = pkgs.mkShell { packages = [ pkgs.bashInteractive ]; 
                                           buildInputs = with pkgs; [
                                                 (python311.withPackages (ps: with ps; [
-                                                          numpy
-                                                          pandas
-                                                          scikit-learn
-                                                          pytorch
-                                                          mlflow
+                                                          mkdocs
                                                         ]))
-                                                vhs
-                                                nodejs_22
-                                                go
                                           ];
                                           };
       }
